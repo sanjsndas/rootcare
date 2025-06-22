@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Rootcare Organic Garden Design</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+        
+        :root {
+            --primary: #5E8B7E;
+            --secondary: #A7C4BC;
+            --accent: #DFEEEA;
+            --text: #2F5D62;
+            --light: #F4F9F9;
+            --dark: #1E3D3A;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--text);
+            background-color: var(--light);
+            line-height: 1.6;
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+            color: var(--dark);
+        }
+        
+        .hero {
+            background: linear-gradient(rgba(30, 61, 58, 0.7), rgba(30, 61, 58, 0.7)), url('https://images.unsplash.com/photo-1605000797499-95a51c5269ae?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            min-height: 50vh;
+        }
+        
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: var(--primary);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            background-color: var(--dark);
+            transform: translateY(-2px);
+        }
+        
+        .contact-point {
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #A7C4BC;
+        }
+        
+        .natural-border {
+            border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+        }
+        
+        .form-input {
+            border: 1px solid #A7C4BC;
+            border-radius: 8px;
+            padding: 12px;
+            width: 100%;
+            transition: all 0.3s ease;
+        }
+        
+        .form-input:focus {
+            outline: none;
+            border-color: #5E8B7E;
+            box-shadow: 0 0 0 3px rgba(94, 139, 126, 0.2);
+        }
+        
+        .form-label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+        
+        .contact-card {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-2xl font-bold text-green-800 flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                        </svg>
+                        Rootcare
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="nav-link text-gray-700 hover:text-green-800 transition duration-300">Home</a>
+                    <a href="privacy.html" class="nav-link text-gray-700 hover:text-green-800 transition duration-300">Privacy</a>
+                    <a href="terms.html" class="nav-link text-gray-700 hover:text-green-800 transition duration-300">Terms & Conditions</a>
+                    <a href="cookies.html" class="nav-link text-gray-700 hover:text-green-800 transition duration-300">Cookies</a>
+                    <a href="contact.html" aria-current="page" class="nav-link text-green-800 font-medium">Contact Us</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-gray-700 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero flex items-center justify-center text-center text-white">
+        <div class="container mx-auto px-6 py-20">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Contact Rootcare</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">We'd love to hear from you about your organic garden design needs.</p>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <div class="contact-card">
+                <h2 class="text-3xl font-bold mb-8 text-center">Get In Touch</h2>
+                <form action="#" method="POST" class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="first-name" class="form-label">First Name</label>
+                            <input type="text" id="first-name" name="first-name" class="form-input" required>
+                        </div>
+                        <div>
+                            <label for="last-name" class="form-label">Last Name</label>
+                            <input type="text" id="last-name" name="last-name" class="form-input" required>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" id="email" name="email" class="form-input" required>
+                    </div>
+                    <div>
+                        <label for="phone" class="form-label">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" class="form-input">
+                    </div>
+                    <div>
+                        <label for="subject" class="form-label">Subject</label>
+                        <select id="subject" name="subject" class="form-input">
+                            <option value="">Select a subject</option>
+                            <option value="design">Garden Design Inquiry</option>
+                            <option value="maintenance">Maintenance Services</option>
+                            <option value="consultation">Consultation Request</option>
+                            <option value="general">General Inquiry</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="message" class="form-label">Your Message</label>
+                        <textarea id="message" name="message" rows="6" class="form-input" required></textarea>
+                    </div>
+                    <div class="flex justify-center">
+                        <button type="submit" class="btn-primary px-8 py-3 rounded-full font-medium">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Information Section -->
+    <section class="py-20 bg-green-50">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Comprehensive Contact Information</h2>
+            
+            <!-- Point 1 -->
+            <div class="contact-point">
+                <h3 class="text-2xl font-bold mb-4">1. Our Headquarters</h3>
+                <p class="text-lg">Rootcare's main office is located at 334 E 25th St, New York, NY 10010, USA. Our headquarters serves as the central hub for all our operations, including garden design planning, client consultations, and administrative functions. The office is open Monday through Friday from 9:00 AM to 5:00 PM. Visitors are welcome by appointment. Our facilities include a design studio, meeting rooms, and a small demonstration garden showcasing our organic gardening techniques.</p>
+            </div>
+
+            <!-- Point 2 -->
+            <div class="contact-point">
+                <h3 class="text-2xl font-bold mb-4">2. Phone Contact</h3>
+                <p class="text-lg">For immediate assistance, you can reach our customer service team at (123) 456-7890. Our phone lines are open Monday through Friday from 8:00 AM to 6:00 PM EST. For after-hours inquiries, please leave a voicemail and we will return your call within one business day. We have dedicated lines for different departments: press 1 for new garden design inquiries, press 2 for existing clients, press 3 for maintenance services, and press 4 for all other inquiries.</p>
+            </div>
+
+            <!-- Point 3 -->
+            <div class="contact-point">
+                <h3 class="text-2xl font-bold mb-4">3. Email Communication</h3>
+                <p class="text-lg">For non-urgent inquiries, you can email us at info@rootcare.com. We strive to respond to all emails within 24-48 hours. For specific departments, use these email addresses: design@rootcare.com for garden design inquiries, maintenance@rootcare.com for service requests, and careers@rootcare.com for employment opportunities. Please include as much detail as possible in your email to help us respond more effectively to your inquiry.</p>
+            </div>
+
+            <!-- Point 4 -->
+            <div class="contact-point">
+                <h3 class="text-2xl font-bold mb-4">4. Emergency Contact</h3>
+                <p class="text-lg">For urgent matters related to ongoing projects or maintenance services, please call our emergency line at (123) 456-7891. This line is monitored 24/7 for true emergencies affecting your garden's health or safety. Examples of emergencies include irrigation system failures, storm damage to garden structures, or pest infestations requiring immediate attention. For non-emergency issues, please use our regular contact channels to help us prioritize urgent requests.</p>
+            </div>
+
+            <!-- Point 5 -->
+            <div class="contact-point">
+                <h3 class="text-2xl font-bold mb-4">5. Mailing Address</h3>
+                <p class="text-lg">Our official mailing address is Rootcare, 334 E 25th St, New York, NY 10010, USA. Please use this address for all written correspondence, including service contracts, payments, and formal communications. For packages and deliveries, please contact us in advance to arrange for proper receipt. We recommend using tracked mail for important documents and allowing 5-7 business days for processing of mailed correspondence.</p>
+            </div>
+
+            <!-- Point 6 -->
+            <div class="contact-point">
+                <h3 class="text-2xl font-bold mb-4">6. Social Media</h3>
+                <p class="text-lg">Connect with us on social media for the latest updates, gardening tips, and project showcases. Find us on Instagram @RootcareDesign, Facebook at Rootcare Organic Gardens, and Pinterest as Rootcare Inspiration. While we monitor these platforms regularly, they are not the best channels for service requests or urgent matters. For quick questions or to share photos of your garden, social media can be an effective way to engage with our team.</p>
+            </div>
+
+            <!-- Point 7 -->
+            <div class="contact-point">
+                <h3 class="text-2xl font-bold mb-4">7. Consultation Appointments</h3>
+                <p class="text-lg">To schedule a consultation with one of our garden design specialists, please call our appointment line at (123) 456-7892 or use the online booking system on our website. Initial consultations typically last 60-90 minutes and can be conducted at your property, at our office, or via video call. We recommend preparing a list of questions and any inspiration photos beforehand to make the most of your consultation time.</p>
+            </div>
+
+            <!-- Point 8 -->
+            <div class="contact-point">
+                <h3 class="text-2xl font-bold mb-4">8. Service Areas</h3>
+                <p class="text-lg">Rootcare currently serves the greater New York metropolitan area, including all five boroughs of NYC, Long Island, Westchester County, and parts of New Jersey and Connecticut. For projects outside our standard service area, additional travel fees may apply. We're continually expanding our service areas, so please contact us even if you're located outside these regions to discuss potential arrangements.</p>
+            </div>
+
+            <!-- Point 9 -->
+            <div class="contact-point">
+                <h3 class="text-2xl font-bold mb-4">9. Business Hours</h3>
+                <p class="text-lg">Our standard business hours are Monday through Friday from 9:00 AM to 5:00 PM EST. During peak gardening seasons (spring and fall), we often extend these hours to accommodate increased demand. Field crews may be working at client properties earlier or later than office hours. Administrative staff are generally available during standard hours, while our design team may have flexible schedules to accommodate client meetings.</p>
+            </div>
+
+            <!-- Point 10 -->
+            <div class="contact-point">
+                <h3 class="text-2xl font-bold mb-4">10. After-Hours Support</h3>
+                <p class="text-lg">For issues requiring attention outside normal business hours, we offer limited after-hours support for existing clients. Our emergency line at (123) 456-7891 is monitored for urgent matters. For non-urgent after-hours inquiries, please leave a voicemail or send an email, and we'll respond during the next business day. After-hours service calls may be subject to additional fees unless covered by your maintenance contract.</p>
+            </div>
+
+            <!-- Point 11 -->
+            <div class="contact-point">
+                <h3 class="text-2xl font-bold mb-4">11. International Inquiries</h3>
+                <p class="text-lg">While our primary operations are based in the United States, we welcome inquiries from international clients. For projects outside the U.S., please email international@rootcare.com with details about your project. We've completed consulting work in several countries and can arrange travel for significant projects. Additional considerations for international work include local regulations, climate differences, and potential language barriers.</p>
+            </div>
+
+            <!-- Point 12 -->
+            <div class="contact-point">
+                <h3 class="text-2xl font-bold mb-4">12. Press Inquiries</h3>
+                <p class="text-lg">Members of the press seeking information, interviews, or images should contact our PR team at press@rootcare.com. We're happy to provide expert commentary on organic gardening trends, sustainable landscaping, and urban greening initiatives. Please allow 2-3 business days for responses to press inquiries. For urgent media requests, please call (123) 456-7893 and identify yourself as press.</p>
+            </div>
+
+            <!-- Point 13 -->
+            <div class="contact-point">
+                <h3 class="text-2xl font-bold mb-4">13. Vendor and Supplier Information</h3>
+                <p class="text-lg">Companies interested in becoming preferred vendors or suppliers should email procurement@rootcare.com with product information and samples. We prioritize partnerships with sustainable, eco-friendly suppliers who share our commitment to organic practices. Current vendors with account questions should contact accounts@rootcare.com. Please include your vendor ID in all correspondence for faster processing.</p>
+            </div>
+
+            <!-- Point 14 -->
+            <div class="contact-point">
+                <h3 class="text-2xl font-bold mb-4">14. Employment Opportunities</h3>
+                <p class="text-lg">For information about current job openings, please visit the careers section of our website or email your resume to careers@rootcare.com. We're always looking for talented horticulturists, landscape designers, and maintenance crew members who share our passion for organic gardening. Applications are accepted year-round, with peak hiring occurring in late winter for the spring season.</p>
+            </div>
+
+            <!-- Point 15 -->
+            <div class="contact-point">
+                <h3 class="text-2xl font-bold mb-4">15 . Client Testimonials</h3>
+                <p class="text-lg">We value feedback from our clients and encourage you to share your experiences with us. Testimonials can be submitted via our website or directly to feedback@rootcare.com. Positive or constructive feedback helps us improve our services and better meet the needs of our clients. Selected testimonials may be featured on our website or social media platforms, with your permission. We appreciate your support and look forward to hearing from you.</p>
+            </div>
+
+            <!-- Point 16 -->
+            <div class="contact-point">
+                <h3 class="text-2xl font-bold mb-4">16. Community Engagement</h3>
+                <p class="text-lg">Rootcare is committed to community involvement and sustainability. We participate in local events, workshops, and educational programs to promote organic gardening practices. If you're interested in collaborating on community projects or hosting a workshop, please reach out to us at community@rootcare.com. We believe in giving back to the community and fostering a love for gardening among all ages.</p>
+            </div>
+
+            <!-- Point 17 -->
+            <div class="contact-point">
+                <h3 class="text-2xl font-bold mb-4">17. Gardening Workshops</h3>
+                <p class="text-lg">We offer a variety of gardening workshops throughout the year, covering topics such as organic gardening, pest management, and landscape design. To learn more about upcoming workshops or to register, visit our website or contact us at workshops@rootcare.com. Workshops are designed for all skill levels, from beginners to experienced gardeners, and provide hands-on learning experiences.</p>
+            </div>
+
+            <!-- Point 18 -->
+            <div class="contact-point">
+                <h3 class="text-2xl font-bold mb-4">18. Sustainability Initiatives</h3>
+                <p class="text-lg">Rootcare is dedicated to sustainable practices in all aspects of our business. We utilize eco-friendly materials, promote biodiversity, and implement water conservation techniques in our projects. If you have questions about our sustainability initiatives or would like to learn how to make your garden more sustainable, please contact us at sustainability@rootcare.com. We are always eager to share our knowledge and resources.</p>
+            </div>
+
+            <!-- Point 19 -->
+            <div class="contact-point">
+                <h3 class="text-2xl font-bold mb-4">19. Garden Design Portfolio</h3>
+                <p class="text-lg">Explore our portfolio of completed garden designs on our website to see the variety of projects we have undertaken. Each project showcases our commitment to organic practices and innovative design. If you would like to discuss a specific project or gather inspiration for your own garden, please reach out to us. We are happy to provide insights and recommendations based on your preferences.</p>
+            </div>
+
+            <!-- Point 20 -->
+            <div class="contact-point">
+                <h3 class="text-2xl font-bold mb-4">20. FAQs</h3>
+                <p class="text-lg">We have compiled a list of frequently asked questions on our website to assist clients in finding quick answers. Topics include service details, pricing, and gardening tips. If you have a question that isn't addressed in our FAQs, please feel free to contact us directly. We are here to help and ensure you have all the information you need.</p>
+            </div>
+
+            <!-- Point 21 -->
+            <div class="contact-point">
+                <h3 class="text-2xl font-bold mb-4">21. Client Resources</h3>
+                <p class="text-lg">Rootcare provides a variety of resources for our clients, including gardening guides, seasonal checklists, and maintenance tips. These resources are available on our website and are designed to help you maintain a healthy and beautiful garden. If you have specific topics you would like us to cover, please let us know, and we will do our best to accommodate your requests.</p>
+            </div>
+
+            <!-- Point 22 -->
+            <div class="contact-point">
+                <h3 class="text-2xl font-bold mb-4">22. Referral Program</h3>
+                <p class="text-lg">We appreciate referrals from our satisfied clients! If you refer a friend or family member to Rootcare, and they book a service, you will receive a discount on your next project. To participate in our referral program, simply have your referral mention your name when they contact us. We value your trust and support in helping us grow our community.</p>
+            </div>
+
+            <!-- Point 23 -->
+            <div class="contact-point">
+                <h3 class="text-2xl font-bold mb-4">23. Seasonal Promotions</h3>
+                <p class="text-lg">Keep an eye on our website and social media for seasonal promotions and discounts on our services. We often run special offers during peak gardening seasons to encourage new clients to experience our services. Sign up for our newsletter to receive updates on promotions, gardening tips, and company news directly to your inbox.</p>
+            </div>
+
+            <!-- Point 24 -->
+            <div class="contact-point">
+                <h3 class="text-2xl font-bold mb-4">24. Garden Maintenance Plans</h3>
+                <p class="text-lg">Rootcare offers customizable garden maintenance plans tailored to your specific needs. Whether you require weekly, bi-weekly, or monthly services, we can create a plan that fits your schedule and budget. To learn more about our maintenance plans, please contact us or visit our website for detailed information and pricing options.</p>
+            </div>
+
+            <!-- Point 25 -->
+            <div class="contact-point">
+                <h3 class="text-2xl font-bold mb-4">25. Landscape Design Services</h3>
+                <p class="text-lg">Our landscape design services encompass everything from initial consultations to final installation. We work closely with clients to create beautiful, functional outdoor spaces that reflect their personal style and enhance their property. If you're interested in landscape design, please reach out to us to schedule a consultation and discuss your vision.</p>
+            </div>
+
+            <!-- Point 26 -->
+            <div class="contact-point">
+                <h3 class="text-2xl font-bold mb-4">26. Pest Management Solutions</h3>
+                <p class="text-lg">Rootcare offers organic pest management solutions to protect your garden without harmful chemicals. Our team is trained in identifying pests and implementing effective, eco-friendly strategies to manage them. If you're experiencing pest issues in your garden, please contact us for an assessment and recommendations tailored to your situation.</p>
+            </div>
+
+            <!-- Point 27 -->
+            <div class="contact-point">
+                <h3 class="text-2xl font-bold mb-4">27. Soil Testing Services</h3>
+                <p class="text-lg">Understanding your soil is crucial for successful gardening. Rootcare provides soil testing services to analyze nutrient levels and pH balance. Based on the results, we can recommend amendments and practices to improve soil health. If you're interested in soil testing, please contact us for more information and pricing.</p>
+            </div>
+
+            <!-- Point 28 -->
+            <div class="contact-point">
+                <h3 class="text-2xl font-bold mb-4">28. Plant Selection Guidance</h3>
+                <p class="text-lg">Choosing the right plants for your garden can be overwhelming. Our team is here to help you select plants that thrive in your specific environment and meet your aesthetic preferences. We consider factors such as sunlight, soil type, and climate when making recommendations. Contact us for personalized plant selection guidance tailored to your garden.</p>
+            </div>
+
+            <!-- Point 29 -->
+            <div class="contact-point">
+                <h3 class="text-2xl font-bold mb-4">29. Community Gardening Initiatives</h3>
+                <p class="text-lg">Rootcare is passionate about community gardening and often collaborates with local organizations to promote gardening in urban areas. If you're interested in starting a community garden or need assistance with an existing one, please reach out to us. We can provide resources, expertise, and support to help your community thrive through gardening.</p>
+            </div>
+
+            <!-- Point 30 -->
+            <div class="contact-point">
+                <h3 class="text-2xl font-bold mb-4">30. Educational Resources</h3>
+                <p class="text-lg">We believe in empowering our clients with knowledge. Rootcare offers a variety of educational resources, including workshops, webinars, and online articles covering various gardening topics. If you're interested in learning more about organic gardening practices, please visit our website or contact us for upcoming educational opportunities.</p>
+            </div>
+
+            <!-- Point 31 -->
+            <div class="contact-point">
+                <h3 class="text-2xl font-bold mb-4">31. Volunteer Opportunities</h3>
+                <p class="text-lg">Rootcare welcomes volunteers who are passionate about gardening and sustainability. We often host volunteer days for community projects and garden maintenance. If you're interested in volunteering with us, please contact us at volunteer@rootcare.com. We appreciate the support of our community and look forward to working together to make a positive impact.</p>
+            </div>
+
+            <!-- Point 32 -->
+            <div class="contact-point">
+                <h3 class="text-2xl font-bold mb-4">32. Gardening Tips Newsletter</h3>
+                <p class="text-lg">Sign up for our monthly newsletter to receive gardening tips, seasonal advice, and updates on our services. Our newsletter is a great way to stay informed about the latest trends in organic gardening and to receive exclusive offers. You can subscribe on our website or by contacting us directly.</p>
+            </div>
+
+            <!-- Point 33 -->
+            <div class="contact-point">
+                <h3 class="text-2xl font-bold mb-4">33. Client Satisfaction Guarantee</h3>
+                <p class="text-lg">At Rootcare, we stand behind our work and are committed to client satisfaction. If you're not completely satisfied with our services, please let us know within 30 days, and we will work to resolve the issue. Your feedback is essential to our continuous improvement, and we appreciate the opportunity to make things right.</p>
+            </div>
+
+            <!-- Point 34 -->
+            <div class="contact-point">
+                <h3 class="text-2xl font-bold mb-4">34. Eco-Friendly Practices</h3>
+                <p class="text-lg">Rootcare is dedicated to using eco-friendly practices in all our services. We prioritize organic materials, sustainable landscaping techniques, and environmentally responsible pest management. If you're interested in learning more about our eco-friendly practices or how to implement them in your own garden, please reach out to us.</p>
+            </div>
+
+            <!-- Point 35 -->
+            <div class="contact-point">
+                <h3 class="text-2xl font-bold mb-4">35. Seasonal Gardening Guides</h3>
+                <p class="text-lg">To help you maintain a thriving garden year-round, we provide seasonal gardening guides on our website. These guides include tips on planting, maintenance, and pest management tailored to each season. If you have specific questions or need personalized advice, please contact us for assistance.</p>
+            </div>
+
+            <!-- Point 36 -->
+            <div class="contact-point">
+                <h3 class="text-2xl font-bold mb-4">36. Garden Design Consultations</h3>
+                <p class="text-lg">Our garden design consultations are tailored to your specific needs and preferences. During the consultation, we will discuss your vision, assess your space, and provide recommendations for plants, layout, and design elements. To schedule a consultation, please contact us or fill out the contact form above.</p>
+            </div>
+
+            <!-- Point 37 -->
+            <div class="contact-point">
+                <h3 class="text-2xl font-bold mb-4">37. Client Appreciation Events</h3>
+                <p class="text-lg">We host client appreciation events throughout the year to thank our loyal clients and celebrate our gardening community. These events include garden tours, workshops, and social gatherings. If you're a client, keep an eye on your email for invitations to these special events!</p>
+            </div>
+
+            <!-- Point 38 -->
+            <div class="contact-point">
+                <h3 class="text-2xl font-bold mb-4">38. Gardening Resources for Schools</h3>
+                <p class="text-lg">Rootcare is committed to promoting gardening education in schools. We offer resources and support for schools looking to start or enhance their gardening programs. If you're an educator interested in gardening initiatives, please contact us to discuss how we can assist your school.</p>
+            </div>
+
+            <!-- Point 39 -->
+            <div class="contact-point">
+                <h3 class="text-2xl font-bold mb-4">39. Garden Design Trends</h3>
+                <p class="text-lg">Stay updated on the latest garden design trends by following our blog and social media channels. We regularly share insights on popular styles, plant selections, and innovative gardening techniques. If you have specific design questions or want to explore current trends, feel free to reach out to us.</p>
+            </div>
+
+            <!-- Point 40 -->
+            <div class="contact-point">
+                <h3 class="text-2xl font-bold mb-4">40. Thank You for Connecting</h3>
+                <p class="text-lg">We appreciate your interest in Rootcare and look forward to connecting with you. Whether you have questions, feedback, or are ready to start your gardening journey, our team is here to help. Thank you for considering us for your organic gardening needs!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-green-800 text-white py-6">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2023 Rootcare. All rights reserved.</p>
+            <p>334 E 25th St, New York, NY 10010, USA | Phone: (123) 456-7890</p>
+        </div>
+    </footer>
+</body>
+</html>

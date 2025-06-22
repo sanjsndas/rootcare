@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Policy - Rootcare Organic Garden Design</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+        
+        :root {
+            --primary: #5E8B7E;
+            --secondary: #A7C4BC;
+            --accent: #DFEEEA;
+            --text: #2F5D62;
+            --light: #F4F9F9;
+            --dark: #1E3D3A;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--text);
+            background-color: var(--light);
+            line-height: 1.6;
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+            color: var(--dark);
+        }
+        
+        .hero {
+            background: linear-gradient(rgba(30, 61, 58, 0.7), rgba(30, 61, 58, 0.7)), url('https://images.unsplash.com/photo-1605000797499-95a51c5269ae?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            min-height: 50vh;
+        }
+        
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: var(--primary);
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            background-color: var(--dark);
+            transform: translateY(-2px);
+        }
+        
+        .cookie-point {
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid #A7C4BC;
+        }
+        
+        .natural-border {
+            border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+        }
+        
+        .cookie-consent {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: var(--dark);
+            color: white;
+            padding: 1.5rem;
+            z-index: 1000;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .cookie-consent p {
+            margin-bottom: 1rem;
+            flex: 1 1 100%;
+        }
+        
+        @media (min-width: 768px) {
+            .cookie-consent p {
+                flex: 1;
+                margin-bottom: 0;
+                margin-right: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <a href="index.html" class="text-2xl font-bold text-green-800 flex items-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                        </svg>
+                        Rootcare
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="nav-link text-gray-700 hover:text-green-800 transition duration-300">Home</a>
+                    <a href="privacy.html" class="nav-link text-gray-700 hover:text-green-800 transition duration-300">Privacy</a>
+                    <a href="terms.html" class="nav-link text-gray-700 hover:text-green-800 transition duration-300">Terms & Conditions</a>
+                    <a href="cookies.html" aria-current="page" class="nav-link text-green-800 font-medium">Cookies</a>
+                    <a href="contact.html" class="nav-link text-gray-700 hover:text-green-800 transition duration-300">Contact Us</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="text-gray-700 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero flex items-center justify-center text-center text-white">
+        <div class="container mx-auto px-6 py-20">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">Cookie Policy</h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">Learn how we use cookies to enhance your browsing experience</p>
+        </div>
+    </section>
+
+    <!-- Cookie Policy Content -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <div class="mb-12">
+                <p class="text-lg mb-6">Last Updated: January 1, 2023</p>
+                <p class="text-lg mb-6">This Cookie Policy explains how Rootcare ("we," "us," or "our") uses cookies and similar technologies when you visit our website rootcare.com (the "Site").</p>
+                <p class="text-lg mb-6">By using our Site, you consent to the use of cookies in accordance with this Cookie Policy. You can manage your cookie preferences at any time.</p>
+            </div>
+
+            <h2 class="text-3xl md:text-4xl font-bold mb-8">Comprehensive Cookie Policy</h2>
+
+            <!-- Point 1 -->
+            <div class="cookie-point">
+                <h3 class="text-2xl font-bold mb-4">1. What Are Cookies?</h3>
+                <p class="text-lg">Cookies are small text files that are placed on your computer or mobile device when you visit a website. They are widely used to make websites work more efficiently, as well as to provide information to the site owners. Cookies typically contain the name of the website they come from, how long they will remain on your device, and a unique identifier. They help websites remember your preferences and improve your user experience. Without cookies, some website functionality may be impaired.</p>
+            </div>
+
+            <!-- Point 2 -->
+            <div class="cookie-point">
+                <h3 class="text-2xl font-bold mb-4">2. Types of Cookies We Use</h3>
+                <p class="text-lg">We use several types of cookies on our Site: Strictly Necessary Cookies (essential for site operation), Performance Cookies (collect anonymous data about site usage), Functionality Cookies (remember your preferences), and Targeting/Advertising Cookies (used for personalized advertising). Each type serves a different purpose and helps us provide a better user experience. Some cookies are session-based and expire when you close your browser, while others are persistent and remain on your device for a set period.</p>
+            </div>
+
+            <!-- Point 3 -->
+            <div class="cookie-point">
+                <h3 class="text-2xl font-bold mb-4">3. Strictly Necessary Cookies</h3>
+                <p class="text-lg">These essential cookies enable core functionality such as security, network management, and accessibility. They are necessary for the website to function properly and cannot be switched off in our systems. You can set your browser to block these cookies, but some parts of the site may not work as intended. These cookies do not store any personally identifiable information. Examples include cookies that maintain your session state as you navigate through the site.</p>
+            </div>
+
+            <!-- Point 4 -->
+            <div class="cookie-point">
+                <h3 class="text-2xl font-bold mb-4">4. Performance Cookies</h3>
+                <p class="text-lg">Performance cookies help us understand how visitors interact with our website by collecting and reporting information anonymously. These cookies allow us to count visits and traffic sources so we can measure and improve site performance. They help us know which pages are most and least popular and see how visitors move around the site. All information these cookies collect is aggregated and therefore anonymous. If you do not allow these cookies, we will not know when you have visited our site.</p>
+            </div>
+
+            <!-- Point 5 -->
+            <div class="cookie-point">
+                <h3 class="text-2xl font-bold mb-4">5. Functionality Cookies</h3>
+                <p class="text-lg">These cookies enable the website to provide enhanced functionality and personalization. They may be set by us or by third-party providers whose services we have added to our pages. They remember choices you make (such as your language preference or region) to provide a more personalized experience. The information these cookies collect may be anonymized and they cannot track your browsing activity on other websites. Without these cookies, certain functionality may become unavailable.</p>
+            </div>
+
+            <!-- Point 6 -->
+            <div class="cookie-point">
+                <h3 class="text-2xl font-bold mb-4">6. Targeting/Advertising Cookies</h3>
+                <p class="text-lg">These cookies may be set through our site by our advertising partners. They may be used by those companies to build a profile of your interests and show you relevant advertisements on other sites. They work by uniquely identifying your browser and internet device. If you do not allow these cookies, you will experience less targeted advertising. These cookies are typically persistent and remain on your device until they expire or you delete them.</p>
+            </div>
+
+            <!-- Point 7 -->
+            <div class="cookie-point">
+                <h3 class="text-2xl font-bold mb-4">7. First-Party Cookies</h3>
+                <p class="text-lg">First-party cookies are set directly by our website when you visit us. These cookies are generally used to enable basic functions like page navigation and access to secure areas of the website. The information collected by these cookies is used exclusively by us and is not shared with third parties except as required by law. First-party cookies typically enhance your user experience by remembering your preferences and settings during and between visits.</p>
+            </div>
+
+            <!-- Point 8 -->
+            <div class="cookie-point">
+                <h3 class="text-2xl font-bold mb-4">8. Third-Party Cookies</h3>
+                <p class="text-lg">Third-party cookies are set by domains other than our website, typically by our partners and service providers. These cookies are used for various purposes including analytics, advertising, and social media integration. For example, we may use Google Analytics cookies to understand how visitors use our site. These third parties have their own privacy policies and may use the information collected for their own purposes. We recommend reviewing their policies for more information.</p>
+            </div>
+
+            <!-- Point 9 -->
+            <div class="cookie-point">
+                <h3 class="text-2xl font-bold mb-4">9. Cookie Duration</h3>
+                <p class="text-lg">Cookies can remain on your device for different periods of time. Session cookies are temporary and expire when you close your browser. Persistent cookies remain on your device until they expire or you delete them. The lifespan of persistent cookies varies - some may expire after a few days while others may remain for several years. We set expiration dates for our cookies based on their purpose, with security cookies typically having shorter lifespans than preference cookies.</p>
+            </div>
+
+            <!-- Point 10 -->
+            <div class="cookie-point">
+                <h3 class="text-2xl font-bold mb-4">10. Managing Cookies</h3>
+                <p class="text-lg">You can control and manage cookies in various ways. Most browsers allow you to refuse or accept cookies, delete specific cookies, or block cookies from particular sites. You can also set your browser to notify you when you receive a new cookie. However, blocking all cookies may affect website functionality. Our cookie consent tool allows you to manage your preferences for non-essential cookies. Remember that if you use multiple devices, you'll need to manage cookies on each one separately.</p>
+            </div>
+
+            <!-- Point 11 -->
+            <div class="cookie-point">
+                <h3 class="text-2xl font-bold mb-4">11. Browser Settings</h3>
+                <p class="text-lg">Most web browsers allow some control of cookies through their settings. You can usually find these settings in the "Options" or "Preferences" menu of your browser. Common options include the ability to delete existing cookies, block all cookies, or set preferences for different websites. The steps vary by browser - consult your browser's help documentation for specific instructions. Note that blocking cookies may impact your ability to use certain features of our website and others.</p>
+            </div>
+
+            <!-- Point 12 -->
+            <div class="cookie-point">
+                <h3 class="text-2xl font-bold mb-4">12. Do Not Track Signals</h3>
+                <p class="text-lg">Some browsers offer a "Do Not Track" (DNT) feature that lets you indicate your preference regarding tracking across websites. Currently, there is no industry standard for how to respond to DNT signals, and our website does not currently respond to them. Instead, we provide you with choices about the collection and use of your information as described in this policy. We continue to monitor developments around DNT browser technology.</p>
+            </div>
+
+            <!-- Point 13 -->
+            <div class="cookie-point">
+                <h3 class="text-2xl font-bold mb-4">13. Google Analytics</h3>
+                <p class="text-lg">We use Google Analytics to collect information about how visitors use our website. The cookies collect information in an anonymous form, including the number of visitors, where visitors come from, and pages visited. This helps us improve our website. Google Analytics cookies are considered third-party cookies. You can opt out of Google Analytics tracking by installing the Google Analytics Opt-out Browser Add-on or by adjusting your cookie preferences through our consent tool.</p>
+            </div>
+
+            <!-- Point 14 -->
+            <div class="cookie-point">
+                <h3 class="text-2xl font-bold mb-4">14. Social Media Cookies</h3>
+                <p class="text-lg">Our website may include social media features like Facebook "Like" buttons and Twitter "Tweet" buttons. These features may set cookies that recognize your IP address and the page you're visiting. Social media cookies allow you to share content and connect with social networks. These cookies are typically set by the social media platforms themselves and are governed by their respective privacy policies. We recommend reviewing these policies if you have concerns about social media cookies.</p>
+            </div>
+
+            <!-- Point 15 -->
+            <div class="cookie-point">
+                <h3 class="text-2xl font-bold mb-4">15. Advertising Cookies</h3>
+                <p class="text-lg">We may use advertising cookies to deliver ads that are more relevant to you and your interests. These cookies are also used to limit the number of times you see an advertisement and help measure the effectiveness of advertising campaigns. They remember that you've visited our website and this information may be shared with other organizations such as advertisers. You can manage these cookies through our consent tool or your browser settings.</p>
+            </div>
+
+            <!-- Point 16 -->
+            <div class="cookie-point">
+                <h3 class="text-2xl font-bold mb-4">16. Flash Cookies</h3>
+                <p class="text-lg">Flash cookies (also called Local Shared Objects) are data files similar to cookies, except they can store more complex data than simple text. They are used to remember settings, preferences, and usage similar to browser cookies. Flash cookies are managed through a different interface than the one provided by your web browser. You can control Flash cookies by visiting the Adobe Flash Player Settings Manager. We do not currently use Flash cookies on our website.</p>
+            </div>
+
+            <!-- Point 17 -->
+            <div class="cookie-point">
+                <h3 class="text-2xl font-bold mb-4">17. Web Beacons</h3>
+                <p class="text-lg">In addition to cookies, we may use web beacons (also called pixel tags or clear GIFs) on our website and in our emails. These tiny graphic images help us analyze user behavior by counting visitors or monitoring how users navigate our site. Web beacons are typically used alongside cookies and work in conjunction with them. If you disable cookies, web beacons may still detect anonymous visits, but the information is not linked to any specific user. Web beacons help us understand the effectiveness of our marketing campaigns and improve our services.</p>
+            </div>
+
+            <!-- Point 18 -->
+            <div class="cookie-point">
+                <h3 class="text-2xl font-bold mb-4">18. Cookie Policy Updates</h3>
+                <p class="text-lg">We may update this Cookie Policy from time to time to reflect changes in our practices or for other operational, legal, or regulatory reasons. We encourage you to review this policy periodically for the latest information on our cookie practices. The date at the top of this policy indicates when it was last updated. If we make significant changes, we will notify you through our website or by other means.</p>
+            </div>
+
+            <!-- Point 19 -->
+            <div class="cookie-point">
+                <h3 class="text-2xl font-bold mb-4">19. Your Consent</h3>
+                <p class="text-lg">By using our website, you consent to the use of cookies in accordance with this Cookie Policy. You can withdraw your consent at any time by adjusting your cookie preferences through our consent tool or by changing your browser settings. Please note that if you withdraw your consent, some features of our website may not function properly.</p>
+            </div>
+
+            <!-- Point 20 -->
+            <div class="cookie-point">
+                <h3 class="text-2xl font-bold mb-4">20. Contact Us</h3>
+                <p class="text-lg">If you have any questions about our Cookie Policy or our use of cookies, please contact us at info@rootcare.com or call us at (123) 456-7890. We are committed to addressing your concerns and providing you with the information you need regarding our cookie practices.</p>
+            </div>
+
+            <!-- Point 21 -->
+            <div class="cookie-point">
+                <h3 class="text-2xl font-bold mb-4">21. Cookie Preferences Tool</h3>
+                <p class="text-lg">Our website features a cookie preferences tool that allows you to manage your cookie settings easily. You can choose which types of cookies you want to accept or decline. This tool is accessible at any time and provides a user-friendly interface for managing your preferences. We recommend reviewing your settings periodically to ensure they align with your preferences.</p>
+            </div>
+
+            <!-- Point 22 -->
+            <div class="cookie-point">
+                <h3 class="text-2xl font-bold mb-4">23. Cookie Compliance</h3>
+                <p class="text-lg">We strive to comply with applicable laws and regulations regarding cookies and data protection. This includes the General Data Protection Regulation (GDPR) and the California Consumer Privacy Act (CCPA). We take your privacy seriously and are committed to being transparent about our cookie practices. If you have any concerns about our compliance, please reach out to us.</p>
+            </div>
+
+            <!-- Point 23 -->
+            <div class="cookie-point">
+                <h3 class="text-2xl font-bold mb-4">24. Cookie Expiration</h3>
+                <p class="text-lg">Cookies have varying expiration dates depending on their type and purpose. Session cookies expire when you close your browser, while persistent cookies remain on your device for a specified duration. We regularly review our cookies to ensure they are up-to-date and relevant. If you have questions about specific cookies and their expiration, please contact us for more information.</p>
+            </div>
+
+            <!-- Point 25 -->
+            <div class="cookie-point">
+                <h3 class="text-2xl font-bold mb-4">25. Cookie Security</h3>
+                <p class="text-lg">We take the security of your data seriously and implement measures to protect the information collected through cookies. This includes using secure servers and encryption technologies where appropriate. However, please be aware that no method of transmission over the internet or method of electronic storage is 100% secure. If you have concerns about cookie security, please reach out to us.</p>
+            </div>
+
+            <!-- Point 26 -->
+            <div class="cookie-point">
+                <h3 class="text-2xl font-bold mb-4">26. Cookie Policy for Children</h3>
+                <p class="text-lg">Our website is not intended for children under the age of 13. We do not knowingly collect personal information from children. If we become aware that we have collected personal information from a child under 13, we will take steps to delete such information. If you believe we have collected information from a child, please contact us immediately.</p>
+            </div>
+
+            <!-- Point 27 -->
+            <div class="cookie-point">
+                <h3 class="text-2xl font-bold mb-4">27. Cookie Policy for Third-Party Websites</h3>
+                <p class="text-lg">Our website may contain links to third-party websites that have their own cookie policies. We are not responsible for the content or practices of these websites. We encourage you to review the cookie policies of any third-party sites you visit. This Cookie Policy applies only to our website and does not cover third-party sites.</p>
+            </div>
+
+            <!-- Point 28 -->
+            <div class="cookie-point">
+                <h3 class="text-2xl font-bold mb-4">28. Cookie Policy for Mobile Devices</h3>
+                <p class="text-lg">If you access our website from a mobile device, cookies may be used in the same way as on a desktop. Mobile browsers also allow you to manage cookie settings. Please refer to your mobile device's instructions for managing cookies. Our cookie practices remain consistent across devices to ensure a seamless user experience.</p>
+            </div>
+
+            <!-- Point 29 -->
+            <div class="cookie-point">
+                <h3 class="text-2xl font-bold mb-4">29. Cookie Policy for Email Communications</h3>
+                <p class="text-lg">We may use cookies in our email communications to track engagement and improve our marketing efforts. This includes tracking whether emails are opened and links are clicked. This information helps us understand how our audience interacts with our content. If you prefer not to have this information collected, you can unsubscribe from our email communications.</p>
+            </div>
+
+            <!-- Point 30 -->
+            <div class="cookie-point">
+                <h3 class="text-2xl font-bold mb-4">30. Cookie Policy for Analytics</h3>
+                <p class="text-lg">We use cookies for analytics purposes to understand how users interact with our website. This data helps us improve our services and user experience. We may share aggregated data with third parties for analysis, but this data does not identify individual users. If you have questions about our analytics practices, please contact us.</p>
+            </div>
+
+            <!-- Point 31 -->
+            <div class="cookie-point">
+                <h3 class="text-2xl font-bold mb-4">31. Cookie Policy for Advertising Partners</h3>
+                <p class="text-lg">We may work with advertising partners who use cookies to deliver targeted advertisements based on your interests. These partners may collect information about your online activities over time and across different websites. You can manage your preferences for targeted advertising through our cookie consent tool or by visiting the websites of our advertising partners.</p>
+            </div>
+
+            <!-- Point 32 -->
+            <div class="cookie-point">
+                <h3 class="text-2xl font-bold mb-4">32. Cookie Policy for User Feedback</h3>
+                <p class="text-lg">We may use cookies to collect feedback from users about their experience on our website. This feedback helps us improve our services and address any issues. If you provide feedback, we may use cookies to track your responses and ensure we address your concerns effectively. Your feedback is valuable to us, and we appreciate your input.</p>
+            </div>
+
+            <!-- Point 33 -->
+            <div class="cookie-point">
+                <h3 class="text-2xl font-bold mb-4">33. Cookie Policy for Surveys</h3>
+                <p class="text-lg">Occasionally, we may conduct surveys on our website to gather insights from our users. Cookies may be used to track participation and responses. This information helps us understand user preferences and improve our offerings. Participation in surveys is voluntary, and you can choose whether to provide your feedback.</p>
+            </div>
+
+            <!-- Point 34 -->
+            <div class="cookie-point">
+                <h3 class="text-2xl font-bold mb-4">34. Cookie Policy for Promotions</h3>
+                <p class="text-lg">We may run promotions or contests on our website that require the use of cookies to track entries and participation. Cookies help us manage these promotions effectively and ensure a fair process. If you participate in a promotion, we may collect information through cookies to verify your entry and notify winners.</p>
+            </div>
+
+            <!-- Point 35 -->
+            <div class="cookie-point">
+                <h3 class="text-2xl font-bold mb-4">35. Cookie Policy for User Accounts</h3>
+                <p class="text-lg">If you create an account on our website, cookies may be used to remember your login information and preferences. This enhances your user experience by allowing you to access your account without needing to log in each time. You can manage your account settings and cookie preferences through your account dashboard.</p>
+            </div>
+
+            <!-- Point 36 -->
+            <div class="cookie-point">
+                <h3 class="text-2xl font-bold mb-4">36. Cookie Policy for Feedback Forms</h3>
+                <p class="text-lg">When you submit feedback through our website, cookies may be used to track your submission and ensure we respond appropriately. This helps us manage feedback effectively and improve our services. If you have concerns about how your feedback is handled, please contact us for more information.</p>
+            </div>
+
+            <!-- Point 37 -->
+            <div class="cookie-point">
+                <h3 class="text-2xl font-bold mb-4">37. Cookie Policy for User Preferences</h3>
+                <p class="text-lg">Cookies help us remember your preferences and settings on our website. This includes language preferences, display settings, and other customizations. By remembering your preferences, we can provide a more personalized experience. You can manage your preferences through our cookie consent tool or your account settings.</p>
+            </div>
+
+            <!-- Point 38 -->
+            <div class="cookie-point">
+                <h3 class="text-2xl font-bold mb-4">38. Cookie Policy for Security</h3>
+                <p class="text-lg">We use cookies to enhance the security of our website and protect user data. This includes cookies that help us detect fraudulent activity and unauthorized access. Security cookies are essential for maintaining the integrity of our website and ensuring a safe browsing experience for our users.</p>
+            </div>
+
+            <!-- Point 39 -->
+            <div class="cookie-point">
+                <h3 class="text-2xl font-bold mb-4">39. Cookie Policy for User Engagement</h3>
+                <p class="text-lg">Cookies help us track user engagement on our website, allowing us to understand how users interact with our content. This information is valuable for improving our website and tailoring our offerings to meet user needs. If you have questions about how we track engagement, please contact us for more information.</p>
+            </div>
+
+            <!-- Point 40 -->
+            <div class="cookie-point">
+                <h3 class="text-2xl font-bold mb-4">40. Thank You for Your Understanding</h3>
+                <p class="text-lg">We appreciate your understanding of our cookie practices and your continued support of Rootcare. If you have any questions or concerns about our Cookie Policy, please do not hesitate to reach out to us. Your feedback is important to us, and we are committed to providing you with a transparent and enjoyable browsing experience.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-green-800 text-white py-6">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2023 Rootcare. All rights reserved.</p>
+            <p>334 E 25th St, New York, NY 10010, USA | Phone: (123) 456-7890</p>
+        </div>
+    </footer>
+
+    <!-- Cookie Consent Dialog -->
+    <div class="cookie-consent">
+        <p>We use cookies to enhance your experience. By clicking "Accept", you agree to our use of cookies. You can manage your preferences in the settings.</p>
+        <div>
+            <button class="btn-primary" onclick="acceptCookies()">Accept</button>
+            <button class="btn-primary" onclick="declineCookies()">Decline</button>
+        </div>
+    </div>
+
+    <script>
+        function acceptCookies() {
+            // Logic to accept cookies
+            document.querySelector('.cookie-consent').style.display = 'none';
+        }
+
+        function declineCookies() {
+            // Logic to decline cookies
+            document.querySelector('.cookie-consent').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
